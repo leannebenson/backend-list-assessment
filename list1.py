@@ -47,8 +47,16 @@ def match_ends(words):
 
 
 def front_x(words):
-    # your code here
-    return
+    xstring = []
+    astring = []
+
+    for word in words:
+        if word.startswith('x'):
+            xstring.append(word)
+        else:
+            astring.append(word)
+
+    return sorted(xstring) + sorted(astring)
 
 
 # C. sort_last
