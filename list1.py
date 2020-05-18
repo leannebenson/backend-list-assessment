@@ -26,8 +26,13 @@ __author__ = "???"
 
 
 def match_ends(words):
-    # your code here
-    return
+    amount = 0
+
+    for word in words:
+        if len(word) > 1 and word[0] == word[-1]:
+            amount += 1
+        
+    return amount
 
 
 # B. front_x
